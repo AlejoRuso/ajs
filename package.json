@@ -2,6 +2,7 @@
   "name": "@alejoruso/5.platforms_ajs",
   "version": "1.0.1",
   "description": "",
+  "keywords": [],
   "homepage": "https://github.com/AlejoRuso/ajs#readme",
   "bugs": {
     "url": "https://github.com/AlejoRuso/ajs/issues"
@@ -14,22 +15,13 @@
   "author": "",
   "type": "commonjs",
   "main": "dist/index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.27.2",
-    "@babel/core": "^7.27.4",
-    "@babel/preset-env": "^7.27.2",
-    "babel-loader": "^10.0.0",
-    "webpack": "^5.99.9",
-    "webpack-cli": "^6.0.1"
+    "build": "webpack --mode production",
+    "start": "node ./index.js"
   },
   "dependencies": {
+    "@alejoruso/5.platforms_ajs": "^1.0.0",
     "node-releases": "^2.0.19",
     "normalize-path": "^3.0.0",
     "once": "^1.4.0",
@@ -87,5 +79,15 @@
     "yallist": "^3.1.1",
     "yocto-queue": "^0.1.0"
   },
-  "keywords": []
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
